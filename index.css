@@ -70,6 +70,7 @@ section{
     width: 20rem;
     border-radius: 1rem;
     box-shadow: 2px 2px 10px var(--black_shadow);
+    transition: 1s all;
 }
 .img_tag{
     height: 20rem;

@@ -1,7 +1,13 @@
 let slide=document.querySelectorAll(".slider_box");
+let slideid=document.querySelectorAll("#slider_id");
 let arrowleft=document.getElementById("arrow_left");
 let count=0;
+let num=0;
 slide.forEach((Element,index)=>{
+    Element.style.left=`${index*100}%`
+})
+
+slideid.forEach((Element,index)=>{
     Element.style.left=`${index*100}%`
 })
 
@@ -10,6 +16,25 @@ let slides=()=>{
         Element.style.transform=`translateX(-${count*100}%)`
     })
 }
+
+let movesilde=()=>{
+    slideid.forEach((Element)=>{
+        Element.style.transform=`translateX(-${num*100}%)`
+    })
+}
+
+runsilder=()=>{
+    num++;
+    movesilde()
+    console.log(num);
+    if(num==4){
+        num=-1;
+    }
+    // if(num==1){
+    //     arrowleft.style.display="block"
+    // }
+}
+setInterval(runsilder,2000)
 
 run=()=>{
     count++;
@@ -21,9 +46,6 @@ run=()=>{
     if(count==1){
         arrowleft.style.display="block"
     }
-    // if(count==1){
-        
-        // }
     }
     console.log(count);
     runback=()=>{
