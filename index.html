@@ -8,6 +8,35 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <div class="box_profile">
+        <div class="form">
+            <div class="name_x">
+                <h1>login</h1>
+            <i class="bx bx-x" onclick="backpage()"></i>
+            </div>
+           <div class="input_label">
+               <label>frist name</label><br>
+               <input class="frist_name" type="text">
+            </div>
+            <div class="input_label">
+                <label>last name</label><br>
+                <input class="last_name" type="text">
+            </div>    
+                <div class="input_label">
+                <label>email</label><br>
+                <input class="email" type="email">
+            </div>
+           <div class="input_label">
+               <label>password</label><br>
+               <input class="password"  type="password">
+            </div>
+               <div class="input_label">
+               <label>confirm password</label><br>
+               <input class="cpassword"  type="password">
+            </div>
+            <input onclick="passcon()" type="submit">
+        </div >
+    </div>
     <header>
         <h1>tarst shopping</h1>
         <nav>
@@ -21,13 +50,15 @@
         <div class="icon_box">
             <i class='bx bxs-sun'id="icon_sun"></i>
         <i class='bx bx-menu'id="icon_menu"></i>
-        <i class='bx bxs-user-circle'></i>
+        <i class='bx bxs-user-circle' onclick="profile()"></i>
         </div>
     </header>
     <section>
     <div class="controler">
+
         <i id="arrow_right" onclick="run()" class="bx bx-left-arrow-alt"></i>
         <i id="arrow_left" onclick="runback()" class="bx bx-right-arrow-alt"></i>
+        <i id="arrow_vision"  class="bx bx-right-arrow-alt"></i>
       <div class="shop">
         <h1>best grocery</h1>
         <div class="img_silde">
@@ -37,6 +68,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <div class="star_btn">
                     <i id="heart"class="bx bx-heart"></i>
+                    <!-- <i class="bx bxs-heart"></i> -->
                 <select>
                     <option>quantity</option>
                     <option>1</option>
@@ -199,7 +231,11 @@
 
         </div>
        </div>
-    </div>    
+       <div class="ads">
+        <img src="img/ads.jpg" alt="">
+       </div>
+    </div> 
+
     </section>
 
     <section>
