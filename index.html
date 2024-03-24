@@ -55,14 +55,15 @@
     </header>
     <section>
     <div class="controler">
-
-        <i id="arrow_right" onclick="run()" class="bx bx-left-arrow-alt"></i>
-        <i id="arrow_left" onclick="runback()" class="bx bx-right-arrow-alt"></i>
-        <i id="arrow_vision"  class="bx bx-right-arrow-alt"></i>
+        <div class="cloth_silder">
+            <i id="arrow_right" onclick="run()" class="bx bx-left-arrow-alt"></i>
+            <i id="arrow_left" onclick="runback()" class="bx bx-right-arrow-alt"></i>
+            <i id="arrow_vision"  class="bx bx-right-arrow-alt"></i>
+        </div>
       <div class="shop">
         <h1>best grocery</h1>
         <div class="img_silde">
-            <div class="slider_box">
+            <div class="slider_box" id="slider_box_id">
                 <div class="img_tag"><img src="img/salt.jpg"></div>
                 <h3>tata salt</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -87,7 +88,7 @@
                     <span>add to cart</span>
                 </div>
             </div>
-            <div class="slider_box">
+            <div class="slider_box" id="slider_box_id">
                 <div class="img_tag"><img src="img/cake.jpeg"></div>
                 <h3>cake</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -111,7 +112,7 @@
                     <span>add to cart</span>
                 </div>
             </div>
-            <div class="slider_box">
+            <div class="slider_box" id="slider_box_id">
                 <div class="img_tag"><img src="img/sugar.jpg"></div>
                 <h3>sugar</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -135,7 +136,7 @@
                     <span>add to cart</span>
                 </div>
             </div>
-            <div class="slider_box">
+            <div class="slider_box" id="slider_box_id">
                 <div class="img_tag"><img src="img/milk.webp"></div>
                 <h3>milk</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -159,7 +160,7 @@
                     <span>add to cart</span>
                 </div>
             </div>
-            <div class="slider_box">
+            <div class="slider_box" id="slider_box_id">
                 <div class="img_tag"><img src="img/milkshak.webp"></div>
                 <h3>milkshak</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -182,7 +183,7 @@
                 <div class="box_add">
                 <span>add to cart</span></div>
             </div>
-            <div class="slider_box">
+            <div class="slider_box" id="slider_box_id">
                 <div class="img_tag"><img src="img/orange juice.webp"></div>
                 <h3>orange juice</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -205,7 +206,7 @@
                 <div class="box_add">
                 <span>add to cart</span></div>
             </div>
-            <div class="slider_box">
+            <div class="slider_box" id="slider_box_id">
                 <div class="img_tag"><img src="img/milkshak.webp"></div>
                 <h3>sugar</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -228,15 +229,40 @@
                 <div class="box_add">
                 <span>add to cart</span></div>
             </div>
-
+            <div class="slider_box" id="slider_box_id">
+                <div class="img_tag"><img src="img/cake.jpeg"></div>
+                <h3>cake</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="star_btn">
+                    <i id="heart"class="bx bx-heart"></i>
+                <select name="quantity">
+                    <option>quantity</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+                </div>
+                <div class="box_add">
+                    <span>add to cart</span>
+                </div>
+            </div>
         </div>
        </div>
        <div class="ads">
-        <img src="img/ads.jpg" alt="">
+        <img src="img/ads 3.jpg" alt="">
        </div>
+       <div class="shoping_list">
     </div> 
 
     </section>
+    </div>
     <section>
         <div class="controler">
           <div class="shop">
@@ -409,9 +435,14 @@
                 </div>
     
             </div>
+            <div class="cloth_silder">
+                <i id="clothleft"  onclick="clothleft()" class="bx bx-left-arrow-alt"></i>
+                <i id="clothright"  onclick="clothright()" class="bx bx-right-arrow-alt"></i>
+                <i id="clothleft_copy" class="bx bx-right-arrow-alt"></i>
+            </div>
            </div>
         </div>    
-        </section>
+    </section>
     <script src="index.js"></script>
 </body>
 </html>

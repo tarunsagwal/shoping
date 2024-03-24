@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 body{background: var(--bg_color);overflow-x: hidden;}
+
  html{
     font-size: 70%;
 }
@@ -118,25 +119,35 @@ select{
 }
 span{
     font-weight: 900;
-    /* color: rgb(115, 120, 120); */
 }
 
-#arrow_right,#arrow_left,#arrow_vision{
+#arrow_right,#arrow_left,#arrow_vision,#clothleft,#clothright,#clothleft_copy{
     position: absolute;
     top: 41%;
-    background-color:var(--light_bgc);
-    padding: 1.2rem;
+    border: 3px solid var(--black);
+    padding: 1rem;
     border-radius: 50%;
     z-index: 100;
     left: 0%;
 }
 #arrow_vision{left:87%;}
-#arrow_left{left: 87%; display: none;z-index: 110;}
+#arrow_left{left: 87%;display: none;z-index: 500;}
+#clothleft,#clothright,#clothleft_copy{
+    top: 141%;
+     border-color: var(--blur);
+}
+#clothright{display: none;z-index: 500;}
+#clothright,#clothleft_copy{
+    left: 87%;
+}
+
+
 .ads{
 position: fixed;
-height: 20rem;
+height: 50vh;
 width: 100vw;
-top: 68%;
+top: 50%;
+left: 0%;
 z-index: -100;
 background-color: #fff;
 }
@@ -186,6 +197,14 @@ input{
     outline: none;
     padding: .5rem .5rem ;
 }
+
+/* .shoping_list{
+    height: 7rem;
+    width: 7rem;
+    background-color: #0a0a0a;
+    border-radius: 50%;
+} */
+
 @media (max-width:786px) {
     header nav{
         display: none;

@@ -1,10 +1,11 @@
-let slide=document.querySelectorAll(".slider_box");
+let slide=document.querySelectorAll("#slider_box_id");
 let slideid=document.querySelectorAll("#slider_id");
 let arrowleft=document.getElementById("arrow_left");
+let cloth=document.getElementById("clothright");
 let count=0;
 let num=0;
-slide.forEach((Element,index)=>{
-    Element.style.left=`${index*100}%`
+slide.forEach((Ele,ind)=>{
+    Ele.style.left=`${ind*100}%`
 })
 
 slideid.forEach((Element,index)=>{
@@ -18,49 +19,65 @@ let slides=()=>{
 }
 
 let movesilde=()=>{
-    slideid.forEach((Element)=>{
-        Element.style.transform=`translateX(-${num*100}%)`
+    slideid.forEach((Elem)=>{
+        Elem.style.transform=`translateX(-${num*100}%)`
     })
 }
 
-runsilder=()=>{
+clothleft=()=>{
     num++;
     movesilde()
-    console.log(num);
-    if(num==4){
-        num=-1;
+    console.log(num+"hi");
+    if(num==5){
+        num=1;
     }
-    // if(num==1){
-    //     arrowleft.style.display="block"
-    // }
+    if(num==1){
+        cloth.style.display="flex"
+    }
+   else if(num==0){
+        cloth.style.display="none"
+        
+    }
 }
-setInterval(runsilder,2000)
+console.log(num+"hi");
+clothright=()=>{
+    num--;
+    movesilde()
+    console.log(num+"hi");
+    if(num==0){
+        cloth.style.display="none" 
+    }
+}
 
 run=()=>{
     count++;
     slides()
     console.log(count);
-    if(count==4){
-        count=-1;
+    if(count==6){
+        count=1;
     }
     if(count==1){
-        arrowleft.style.display="block"
+        arrowleft.style.display="flex"
     }
+   else if(count==0){
+        arrowleft.style.display="none"
+        
     }
+}
+console.log(count);
+runback=()=>{
+    count--;
+    slides()
     console.log(count);
-    runback=()=>{
-        count--;
-        slides()
-        console.log(count);
-        if(count==0){
-            arrowleft.style.display="none"
-            
+    if(count==0){
+        arrowleft.style.display="none" 
     }
 }
 
 let pro=document.querySelector(".box_profile")
 let profile=()=>{
     pro.style.display="flex"
+    
 }
 let backpage=()=>{
     pro.style.display="none"
