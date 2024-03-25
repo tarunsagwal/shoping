@@ -117,3 +117,31 @@ let passcon=()=>{
     }
     
 }
+
+let cartlist=document.getElementsByClassName("shoping_list")[0];
+let iconchange=document.querySelector("#icon_change");
+let shopingadd=document.querySelector("shoping_list h1");
+
+shopingcart=()=>{
+    cartlist.classList.add("shoping_lists");
+    iconchange.style.display="none";
+}
+let input=document.querySelector(".input")
+let head=document.querySelector("h3");
+additem=()=>{
+    let a=input.value
+    let shopinglist=document.querySelector(".h3_remove");
+    let head=document.createElement("h3")
+    shopinglist.appendChild(head);
+    head.innerHTML=a;
+    head.addEventListener('click',()=>{
+        head.remove();
+    })
+}
+
+remove=()=>{
+    iconchange.style.display="block";
+    cartlist.classList.remove("shoping_lists");
+    input.classList.add("input")
+}
+
