@@ -145,3 +145,10 @@ remove=()=>{
     input.classList.add("input")
 }
 
+let load=document.querySelector(".loader_sheet");
+let loadimg=document.querySelector(".loader_sheet img")
+loading=()=>{
+    load.style.display="none"
+}
+setInterval(loading,8000)
+
