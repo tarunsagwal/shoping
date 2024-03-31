@@ -25,36 +25,32 @@ body{background: var(--bg_color);overflow-x: hidden;}
     --light_bgc:#f9f07a2e;
 }
 .loader_sheet{
-    /* background-color: #fff; */
+    background-color: var(--black_shadow);
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    backdrop-filter: blur(20px);
     width: 100vw;
-    padding-top: 20rem;
     z-index: 2000;
-    animation: movewidth 5s linear infinite;
-    animation-delay: 4s;
+
 }
-@keyframes movewidth {
-    0%{width: 100vw;}
-    50%{width: 6%;}
-    80%{width: 20vw;}
-    /* 70%{width: 20vw;} */
-    100%{width: 0vw;}
-}
+
 .loader_sheet img{
+    width: 10rem;
     height: auto;
-    width: 20rem;
-    animation: move 10s linear infinite;
+    transform: scale(1.1);
+    transition: .5s ;
+    padding: .1rem .1rem;
+    background-color:var(--bg_color) ;
+    border-radius: 50%;
+    animation: move 2.5s infinite ease;
 }
 @keyframes move {
-    0%{transform: translateX(0%);}
-    40%{transform: translateX(120rem);}
-    50%{transform:  rotateY(40deg) translateX(100rem);}
-    61%{transform:  rotateY(60deg) translateX(80rem);}
-    71%{transform:  rotateY(80deg) translateX(60rem);}
-    81%{transform:  rotateY(100deg) translateX(40rem);}
-    90%{transform: rotateY(180deg)  translateX(0rem);}
+    0%{transform: scale(1.2);}
+    /* 50%{transform: scale(1.5);} */
+    100%{transform: scale(1.5);}
+
 }
 header{
     background-color: var(--nav_color);

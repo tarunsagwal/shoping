@@ -150,5 +150,5 @@ let loadimg=document.querySelector(".loader_sheet img")
 loading=()=>{
     load.style.display="none"
 }
-setInterval(loading,8000)
+setInterval(loading,2000)
 
