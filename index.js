@@ -150,5 +150,15 @@ let loadimg=document.querySelector(".loader_sheet img")
 loading=()=>{
     load.style.display="none"
 }
-setInterval(loading,2000)
+setInterval(loading,2000);
+let heartchange=document.querySelector("#heart");
+let heartred=document.querySelector("#hearts");
+let heart=()=>{
+    heartchange.style.display="none"
+    heartred.style.display="block"
+}
+let hearts=()=>{
+    heartred.style.display="none"
+    heartchange.style.display="block"
+}
 
